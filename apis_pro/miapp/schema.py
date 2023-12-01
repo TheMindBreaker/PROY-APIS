@@ -3,6 +3,7 @@ from graphene_django import DjangoObjectType
 from .models import CustomUser
 import graphql_jwt
 from graphql_jwt.shortcuts import get_token
+import predict.schema as second_schema
 
 
 class UserType(DjangoObjectType):
@@ -40,7 +41,7 @@ class AuthMutation(graphene.ObjectType):
     refresh_token = graphql_jwt.Refresh.Field()
 
 # Aquí es donde integras la clase AuthMutation con la clase Mutation
-class Mutation(AuthMutation, graphene.ObjectType):
+class Mutation(second_schema.Mutation, AuthMutation, graphene.ObjectType):
     create_user = CreateUser.Field()
     # Aquí puedes añadir otras mutaciones si las necesitas
 

@@ -52,7 +52,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'graphene_django',
-    'miapp'
+    'miapp',
+    'predict',
 ]
 
 MIDDLEWARE = [
