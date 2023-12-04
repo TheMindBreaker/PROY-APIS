@@ -1,8 +1,9 @@
 name: api-proy
 services:
-    nginx:
+    web:
+        build: .
         ports:
-            - 8000:8000
+        - 8080:8080
         restart: always
         logging:
             options:
