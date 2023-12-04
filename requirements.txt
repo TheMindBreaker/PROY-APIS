@@ -1,6 +1,6 @@
 graphene-django
+django-graphql-jwt
 django
-django-graphql-
 pandas 
 scikit-learn
 joblib
