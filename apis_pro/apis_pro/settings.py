@@ -26,7 +26,8 @@ SECRET_KEY = 'django-insecure--9%489tajhe2kt!ve0i$l1z)(0os!c+&$h9dd-)m@eob*(e$qx
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    "0.0.0.0"
+    "0.0.0.0",
+    'nginx-themindbreaker.cloud.okteto.net'
 ]
 
 GRAPHENE = {

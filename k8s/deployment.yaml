@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: apis-proy
-        image: a01229632/proy-apis-web:latest
+        image: a01229632/proy-apis:latest
         ports:
         - containerPort: 8000
