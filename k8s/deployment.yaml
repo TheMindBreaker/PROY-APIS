@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: apis_proy
+  name: apis-proy
 spec:
   selector:
     matchLabels:
-      app: apis_proy
+      app: apis-proy
   replicas: 1
   template:
     metadata:
       labels:
-        app: apis_proy
+        app: apis-proy
     spec:
       containers:
-      - name: hello-world
+      - name: apis-proy
         image: a01229632/proy-apis-web:latest
         ports:
         - containerPort: 8000
