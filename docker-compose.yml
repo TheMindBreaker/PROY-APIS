@@ -1,0 +1,10 @@
+name: api-proy
+services:
+    nginx:
+        ports:
+            - 8000:8000
+        restart: always
+        logging:
+            options:
+                max-size: 1g
+        image: proy_apis:latest
