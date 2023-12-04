@@ -7,4 +7,4 @@ services:
         logging:
             options:
                 max-size: 1g
-        image: proy-apis:latest
+        image: a01229632/proy-apis:latest
