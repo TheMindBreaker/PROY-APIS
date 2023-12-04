@@ -25,7 +25,9 @@ SECRET_KEY = 'django-insecure--9%489tajhe2kt!ve0i$l1z)(0os!c+&$h9dd-)m@eob*(e$qx
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    "0.0.0.0"
+]
 
 GRAPHENE = {
     'SCHEMA': 'miapp.schema.schema', # Asegúrate de tener la ruta correcta a tu esquema
